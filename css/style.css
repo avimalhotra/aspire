@@ -19,6 +19,7 @@ body{font: 16px/normal system-ui, sans-serif;}
 .container{ max-width: 1200px; margin: auto; padding: 0 1rem;}
 
 .flex{ display: flex; }
+.wrap{ flex-flow: wrap;}
 .align-center{ align-items: center;}
 .justify-between{ justify-content: space-between;}
 .justify-center{ justify-content: center;}
@@ -56,6 +57,27 @@ header .link-green{  width: 116px; border-radius: 18px; text-align: center; back
 .hero .link{ line-height: 52px; border-radius: 26px; padding: 0 30px; border: 1px solid; color: #fff; display: inline-block; }
 .hero .link.active{ background: var(--green); border-color: transparent; margin-right: 22px;}
 .customers{ padding: 80px 0;}
+
+
+
+.features{ padding: 120px 0;}
+.sub-headings{ line-height: 25px; border-radius: 12.5px; font-size: 12px; font-weight: 500; }
+.sub-headings + p{ font-size: 56px; line-height: 60px; font-weight: bold; margin: 20px 0 10px; }
+.bg-pink{ background: #f63a611a; color: #F63A61; display: inline-block; padding: 0 15px; text-transform: uppercase; }
+.para{ color: #11182780;}
+.accordion{ border: 1px solid; border-color: #0000001a transparent #0000001a transparent; margin: 40px 0;}
+.accordion li{ padding: 40px 0;}
+.accordion li:not(:first-child){ border-top: 1px solid #0000001a; }
+.accordion .box{ width: 40px; line-height: 40px; border-radius:10px; display: inline-block; text-align: center; }
+.accordion li:nth-child(1) .box{ background: #FFD978;}
+.accordion li:nth-child(2) .box{ background: #FFD978;}
+.accordion li:nth-child(3) .box{ background: #FFD978;}
+.accordion a{ color: #000; font-weight: 500; font-size: 24px; display: block;}
+.accordion a::after{ content: "^"; float: right; }
+.accordion .para{ margin-left: 50px; display: none;}
+.accordion li.active .para{ display: block;}
+
+
 
 
 /* responsive */
