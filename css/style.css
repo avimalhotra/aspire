@@ -54,13 +54,13 @@ header .link-green{  width: 116px; border-radius: 18px; text-align: center; back
 .hero{ padding: 80px 0; border-bottom: 1px solid #ffffff4d;}
 .hero .lg{font-size: 56px; line-height: 60px; }
 .hero .text{ margin: 20px 0 55px; color: #ffffff80;}
-.hero .link{ line-height: 52px; border-radius: 26px; padding: 0 30px; border: 1px solid; color: #fff; display: inline-block; }
-.hero .link.active{ background: var(--green); border-color: transparent; margin-right: 22px;}
+.banner .link{ line-height: 52px; border-radius: 26px; padding: 0 30px; border: 1px solid; color: #fff; display: inline-block; }
+.link.active{ background: var(--green); border-color: transparent; margin-right: 22px;}
 .customers{ padding: 80px 0;}
 
 
 
-.features{ padding: 120px 0;}
+.features{ padding: 60px 0;}
 .sub-headings{ line-height: 25px; border-radius: 12.5px; font-size: 12px; font-weight: 500; }
 .sub-headings + p{ font-size: 56px; line-height: 60px; font-weight: bold; margin: 20px 0 10px; }
 .bg-pink{ background: #f63a611a; color: #F63A61; display: inline-block; padding: 0 15px; text-transform: uppercase; }
@@ -78,6 +78,25 @@ header .link-green{  width: 116px; border-radius: 18px; text-align: center; back
 .accordion li.active .para{ display: block;}
 
 
+
+.stats{ color: var(--dblue); padding: 60px 0; }
+.stat{ border-top: 1px solid #0000001a;  padding: 40px 0 120px; margin-top: 60px;}
+.stat p{ font-size: 60px; font-weight: bold;}
+.stat small{ font-size: 16px; color: #0f004980;}
+
+.call-to-action{ background: #FFFAE7; padding: 120px 0;}
+.call-to-action h2{font-size: 56px; line-height: 60px; }
+.call-to-action p{ margin: 10px 0 40px;}
+.link-green{ color: var(--green); }
+
+.team{ padding: 120px 0; text-align: center; }
+.team .row{ margin: 60px 0; }
+.team-member{ margin: 30px 0; }
+.team-member h3{ margin: 30px 0 5px;}
+.team-member p{ font-size: 16px; color: #0f004980;}
+
+
+footer{ padding: 120px 0; background: #FFFAE7; }
 
 
 /* responsive */
