@@ -54,9 +54,11 @@ header .link-green{  width: 116px; border-radius: 18px; text-align: center; back
 .hero{ padding: 80px 0; border-bottom: 1px solid #ffffff4d;}
 .hero .lg{font-size: 56px; line-height: 60px; }
 .hero .text{ margin: 20px 0 55px; color: #ffffff80;}
-.banner .link{ line-height: 52px; border-radius: 26px; padding: 0 30px; border: 1px solid; color: #fff; display: inline-block; }
+.banner .link{ line-height: 52px; border-radius: 26px; padding: 0 30px; border: 1px solid; color: #fff; display: inline-block; background: none; }
 .link.active{ background: var(--green); border-color: transparent; margin-right: 22px;}
 .customers{ padding: 80px 0;}
+/* ::backdrop{ background: #000c;} */
+/* video{ position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%);} */
 
 
 
@@ -75,7 +77,8 @@ header .link-green{  width: 116px; border-radius: 18px; text-align: center; back
 .accordion a{ color: #000; font-weight: 500; font-size: 24px; display: block;}
 .accordion a::after{ content: "^"; float: right; }
 .accordion .para{ margin-left: 50px; display: none;}
-.accordion li.active .para{ display: block;}
+.accordion li:first-child .para{ display: block;}
+.accordion li.active a::after{ transform: rotate(180deg);}
 
 
 

@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Aspire</title>
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css" integrity="sha512-lvaVbvmbHhG8cmfivxLRhemYlTT60Ly9Cc35USrpi8/m+Lf/f/T8x9kEIQq47cRj1VQIFuxTxxCcvqiQeQSHjQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
      <header>
@@ -45,7 +46,11 @@
                               <p class="lg">Website Templates That boost your sales</p>
                               <p class="text">Empowering Your Financial Journey through Customized Asset Management Services</p>
                               <a href="" class="link active">Get Started</a>
-                              <a href="" class="link">Watch Demo</a>
+                              <a href="https://www.youtube.com/watch?v=ZAaxxSw3qN4" class="link watch">Watch Demp</a>
+
+                              <!-- <button popovertarget="video" class="link watch">Watch Demo</button>
+                              <video src="" width="640" height="360" id="video" popover="auto"></video> -->
+                              
                          </div>
                          <div class="col-6 col-m-12 order-m-before">
                               <img src="img/heros.webp" alt="heros" >
@@ -230,5 +235,34 @@
                <p>Footer</p>
           </div>
      </footer>
+<script src="js/jquery.min.js"></script>     
+<!-- <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js" integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(function(){
+     $(".accordion a").click(function(e){
+          e.preventDefault();
+
+          if( !$(this).parent("li").hasClass("active") ){
+               $(".accordion li").removeClass("active");
+               $(".accordion li p").slideUp();
+               $(this).parent("li").addClass("active");
+               $(this).next("p").slideDown();
+
+          }
+          // else{
+          //      $(".accordion li").removeClass("active");
+          //      $(".accordion li p").slideUp();
+          // }
+
+     });
+
+     $(".banner .watch").magnificPopup({
+          type: 'iframe', 
+     })
+
+   
+})
+</script>
 </body>
 </html>
